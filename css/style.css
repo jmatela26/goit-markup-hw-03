@@ -1,0 +1,117 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+
+  --navyblue: #2e2f42;
+  --white: #ffffff;
+  --iris: #4d5ae5;
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+
+  color: var(--navyblue);
+}
+
+.logo {
+  color: var(--iris);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.167; /* 116.667% */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.logo-span {
+  color: var(--navyblue);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--navyblue);
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  font-size: 16px;
+}
+
+header a:hover,
+a:focus {
+  color: var(--iris);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.hero-section > button {
+  color: var(--white);
+  background-color: var(--iris);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 0;
+  width: 169px;
+  height: 56px;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--white);
+  color: var(--iris);
+}
+
+h1,
+h2,
+.our-team-section p,
+.our-team-section h3 {
+  text-align: center;
+}
+
+.our-team-section {
+  background-color: var(--cloud);
+}
+
+ul,
+header {
+  list-style-type: none;
+}
+
+.hero-section {
+  background-color: var(--navyblue);
+  color: var(--white);
+}
+
+.hero-section > h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07143; /* 107.143% */
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+}
+
+/* start button css for porfolio */
+.portfolio-section ul > li > button {
+  border-radius: 0px;
+  border: 0px solid var(--cornflower);
+  background: var(--cloud);
+  padding: 2px 5px;
+  color: var(--iris);
+}
+
+.portfolio-section ul > li > button:hover,
+.portfolio-section ul > li > button:focus {
+  background-color: var(--iris);
+  color: var(--white);
+}
+/* end of button css for porfolio */
+
+footer .logo-span {
+  color: var(--white);
+}
+
+footer {
+  background-color: var(--navyblue);
+  color: var(--white);
+}
