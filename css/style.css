@@ -84,9 +84,12 @@ h2,
   background-color: var(--navyblue);
   color: var(--white);
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   height: 600px;
-  margin: 0;
-  padding: 0;
+  gap: 48px;
 }
 
 .hero-section h1 {
