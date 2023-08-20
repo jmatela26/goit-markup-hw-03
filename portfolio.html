@@ -1,118 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Studio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <header class="container">
+      <nav class="nav-bar">
+        <a class="logo" href="index.html"
+          >WEB<span class="logo-span">STUDIO</span></a
+        >
+        <ul class="nav-menu">
+          <li><a class="nav-menu-links" href="index.html">Studio</a></li>
+          <li><a class="nav-menu-links" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-menu-links" href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
 
-<body>
-  <header class="container">
-    <nav class="nav-bar">
-      <a class="logo" href="index.html"
-        >WEB<span class="logo-span">STUDIO</span></a
-      >
-      <ul class="nav-menu">
-        <li><a class="nav-menu-links" href="index.html">Studio</a></li>
-        <li><a class="nav-menu-links" href="portfolio.html">Portfolio</a></li>
-        <li><a class="nav-menu-links" href="#contacts">Contacts</a></li>
-      </ul>
-    </nav>
+      <!-- Outside Nav -->
+      <address class="address-container">
+        <a class="address-links" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        ><br />
+        <a class="address-links" href="tel:+11(000)111-11-11"
+          >+11 (000) 111-11-11</a
+        >
+      </address>
+    </header>
 
-    <!-- Outside Nav -->
-    <address class="address-container">
-      <a class="address-links" href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-      <a class="address-links" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
-    </address>
-  </header>
+    <main>
+      <section class="portfolio-section">
+        <h2 hidden>Buttons</h2>
+        <!-- Buttons -->
+        <ul class="filter-buttons">
+          <li><button type="button" class="btn-filter">All</button></li>
+          <li><button type="button" class="btn-filter">Web Site</button></li>
+          <li><button type="button" class="btn-filter">App</button></li>
+          <li><button type="button" class="btn-filter">Design</button></li>
+          <li><button type="button" class="btn-filter">Marketing</button></li>
+        </ul>
 
-  <main>
-    <section class="portfolio-section">
-      <h2 hidden>Buttons</h2>
-      <!-- Buttons -->
-      <ul class="filter-buttons">
-        <li><button type="button" class="btn-filter">All</button></li>
-        <li><button type="button" class="btn-filter">Web Site</button></li>
-        <li><button type="button" class="btn-filter">App</button></li>
-        <li><button type="button" class="btn-filter">Design</button></li>
-        <li><button type="button" class="btn-filter">Marketing</button></li>
-      </ul>
+        <!-- First Row -->
+        <ul class="portfolio-section-container">
+          <li>
+            <img
+              src="images/banking-app.jpg"
+              alt="Banking App"
+              height="360"
+              width="360"
+            />
+            <h3>Banking App Interface Concept</h3>
+            <p>App</p>
+          </li>
+          <li>
+            <img
+              src="images/cashless-payment.jpg"
+              alt="Cashless Payment"
+              height="360"
+              width="360"
+            />
+            <h3>Cashless Payment</h3>
+            <p>Marketing</p>
+          </li>
+          <li>
+            <img
+              src="images/meditation-app.jpg"
+              alt="Meditation App"
+              height="360"
+              width="360"
+            />
+            <h3>Meditation App</h3>
+            <p>App</p>
+          </li>
 
-      <!-- First Row -->
-      <ul>
-        <li>
-          <img src="images/banking-app.jpg" alt="Banking App" height="360" width="360" />
-          <h3>Banking App Interface Concept</h3>
-          <p>App</p>
-        </li>
-        <li>
-          <img src="images/cashless-payment.jpg" alt="Cashless Payment" height="360" width="360" />
-          <h3>Cashless Payment</h3>
-          <p>Marketing</p>
-        </li>
-        <li>
-          <img src="images/meditation-app.jpg" alt="Meditation App" height="360" width="360" />
-          <h3>Meditation App</h3>
-          <p>App</p>
-        </li>
-      </ul>
+          <!-- Second Row -->
+          <li>
+            <img
+              src="images/taxi-service.jpg"
+              alt="Taxi Service"
+              height="360"
+              width="360"
+            />
+            <h3>Taxi Service</h3>
+            <p>Marketing</p>
+          </li>
+          <li>
+            <img
+              src="images/screen-illustrations.jpg"
+              alt="Screen Illustrations"
+              height="360"
+              width="360"
+            />
+            <h3>Screen Illustrations</h3>
+            <p>Design</p>
+          </li>
+          <li>
+            <img
+              src="images/online-courses.jpg"
+              alt="Online Courses"
+              height="360"
+              width="360"
+            />
+            <h3>Online Courses</h3>
+            <p>Marketing</p>
+          </li>
 
-      <!-- Second Row -->
-      <ul>
-        <li>
-          <img src="images/taxi-service.jpg" alt="Taxi Service" height="360" width="360" />
-          <h3>Taxi Service</h3>
-          <p>Marketing</p>
-        </li>
-        <li>
-          <img src="images/screen-illustrations.jpg" alt="Screen Illustrations" height="360" width="360" />
-          <h3>Screen Illustrations</h3>
-          <p>Design</p>
-        </li>
-        <li>
-          <img src="images/online-courses.jpg" alt="Online Courses" height="360" width="360" />
-          <h3>Online Courses</h3>
-          <p>Marketing</p>
-        </li>
-      </ul>
+          <!-- Third Row -->
+          <li>
+            <img
+              src="images/instagram-stories.jpg"
+              alt="Instagram Stories"
+              height="360"
+              width="360"
+            />
+            <h3>Instagram Stories Concept</h3>
+            <p>Design</p>
+          </li>
+          <li>
+            <img
+              src="images/organic-food.jpg"
+              alt="Organic Food"
+              height="360"
+              width="360"
+            />
+            <h3>Organic Food</h3>
+            <p>Web Site</p>
+          </li>
+          <li>
+            <img
+              src="images/fresh-coffee.jpg"
+              alt="Fresh Coffee"
+              height="360"
+              width="360"
+            />
+            <h3>Fresh Coffee</h3>
+            <p>Web Site</p>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-      <!-- Third Row -->
-      <ul>
-        <li>
-          <img src="images/instagram-stories.jpg" alt="Instagram Stories" height="360" width="360" />
-          <h3>Instagram Stories Concept</h3>
-          <p>Design</p>
-        </li>
-        <li>
-          <img src="images/organic-food.jpg" alt="Organic Food" height="360" width="360" />
-          <h3>Organic Food</h3>
-          <p>Web Site</p>
-        </li>
-        <li>
-          <img src="images/fresh-coffee.jpg" alt="Fresh Coffee" height="360" width="360" />
-          <h3>Fresh Coffee</h3>
-          <p>Web Site</p>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <!-- Page footer -->
-  <footer>
-    <a class="logo" href="index.html">WEB<span class="logo-span">STUDIO</span></a>
-    <p>
-      Increase the flow of customers and <br />
-      sales for your growth with digital <br />
-      marketing & growth solutions
-    </p>
-  </footer>
-</body>
-
+    <!-- Page footer -->
+    <footer>
+      <div class="footer-container">
+        <a class="logo" href="index.html"
+          >WEB<span class="logo-span">STUDIO</span></a
+        >
+        <p>
+          Increase the flow of customers and <br />
+          sales for your growth with digital <br />
+          marketing & growth solutions
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

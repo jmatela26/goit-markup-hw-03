@@ -140,18 +140,47 @@ h2,
 /* end all sections in index html */
 
 /* start button css for porfolio */
-.portfolio-section ul>li>button {
+.portfolio-section ul > li > button {
   border-radius: 0px;
   border: 0px solid var(--cornflower);
   background: var(--cloud);
-  padding: 2px 5px;
+  padding: 12px 24px;
   color: var(--iris);
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-.portfolio-section ul>li>button:hover,
-.portfolio-section ul>li>button:focus {
+.portfolio-section ul > li > button:hover,
+.portfolio-section ul > li > button:focus {
   background-color: var(--iris);
   color: var(--white);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.portfolio-section .portfolio-section-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.portfolio-section-container li {
+  margin-bottom: 20px;
+  border: 1px solid var(--cornflower);
+  background: var(--white);
+}
+
+.portfolio-section-container li > h3,
+.portfolio-section-container li > p {
+  margin-left: 16px;
 }
 
 /* end of button css for porfolio */
@@ -166,8 +195,6 @@ footer {
 }
 
 /*start flex implementation for nav bar */
-
-
 .nav-bar,
 .container,
 .address-container {
@@ -196,5 +223,4 @@ footer {
 .footer-container {
   margin: 156px;
 }
-
 /* end flex implementation for nav bar */
