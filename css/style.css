@@ -176,13 +176,13 @@ h2,
   margin-bottom: 20px;
   border: 1px solid var(--cornflower);
   background: var(--white);
+  box-sizing: border-box;
 }
 
 .portfolio-section-container li > h3,
 .portfolio-section-container li > p {
   margin-left: 16px;
 }
-
 /* end of button css for porfolio */
 
 footer .logo-span {
