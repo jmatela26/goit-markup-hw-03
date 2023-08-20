@@ -17,7 +17,8 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
-  line-height: 1.167; /* 116.667% */
+  line-height: 1.167;
+  /* 116.667% */
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
@@ -46,14 +47,19 @@ button {
   cursor: pointer;
 }
 
-.hero-section > button {
-  color: var(--white);
-  background-color: var(--iris);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  border: 0;
-  width: 169px;
-  height: 56px;
+header {
+  border-bottom: 1px solid var(--cornflower);
+  background: var(--white);
+}
+
+ul,
+header {
+  list-style-type: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
 }
 
 button:hover,
@@ -73,26 +79,68 @@ h2,
   background-color: var(--cloud);
 }
 
-ul,
-header {
-  list-style-type: none;
-}
-
+/* Start Hero Section */
 .hero-section {
   background-color: var(--navyblue);
   color: var(--white);
+  text-align: center;
+  height: 600px;
+  margin: 0;
+  padding: 0;
 }
 
-.hero-section > h1 {
+.hero-section h1 {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07143; /* 107.143% */
   letter-spacing: 1.12px;
-  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
+.hero-section button {
+  color: var(--white);
+  background-color: var(--iris);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 0;
+  width: 169px;
+  height: 56px;
+}
+/* end Hero Section */
+
+
+/* start all sections in index html */
+.feature-section,
+.values-section,
+.our-team-section {
+  margin: 20px;
+  padding: 20px;
+}
+
+.feature-section ul,
+.values-section ul,
+.our-team-section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.feature-section ul li,
+.values-section ul li,
+.our-team-section ul li {
+  margin: 24px;
+}
+
+.our-team-section li {
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+/* end all sections in index html */
+
 /* start button css for porfolio */
-.portfolio-section ul > li > button {
+.portfolio-section ul>li>button {
   border-radius: 0px;
   border: 0px solid var(--cornflower);
   background: var(--cloud);
@@ -100,11 +148,12 @@ header {
   color: var(--iris);
 }
 
-.portfolio-section ul > li > button:hover,
-.portfolio-section ul > li > button:focus {
+.portfolio-section ul>li>button:hover,
+.portfolio-section ul>li>button:focus {
   background-color: var(--iris);
   color: var(--white);
 }
+
 /* end of button css for porfolio */
 
 footer .logo-span {
@@ -115,3 +164,37 @@ footer {
   background-color: var(--navyblue);
   color: var(--white);
 }
+
+/*start flex implementation for nav bar */
+
+
+.nav-bar,
+.container,
+.address-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu-links,
+.address-links {
+  margin: 0 15px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 312px;
+}
+
+.footer-container {
+  margin: 156px;
+}
+
+/* end flex implementation for nav bar */
