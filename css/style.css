@@ -9,6 +9,7 @@ body {
   --cornflower: #e7e9fc;
 
   color: var(--navyblue);
+  margin: 0;
 }
 
 .logo {
@@ -90,7 +91,8 @@ h2,
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 600px;
+  padding-bottom: 184px;
+  padding-top: 184px;
   gap: 48px;
 }
 
