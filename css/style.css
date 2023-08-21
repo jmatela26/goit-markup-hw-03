@@ -113,6 +113,12 @@ h2,
   width: 169px;
   height: 56px;
 }
+
+.hero-section button:hover,
+.hero-section button:focus {
+  background-color: var(--white);
+  color: var(--iris);
+}
 /* end Hero Section */
 
 
