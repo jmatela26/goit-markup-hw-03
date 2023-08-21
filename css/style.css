@@ -123,6 +123,19 @@ h2,
 
 
 /* start all sections in index html */
+.feature-section h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feature-section p {
+  max-width: 270px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7143;
+  letter-spacing: 0.03em;
+}
+
 .feature-section,
 .values-section,
 .our-team-section {
