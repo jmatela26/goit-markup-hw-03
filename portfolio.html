@@ -6,8 +6,8 @@
     <title>Web Studio</title>
 
     <!-- Link CSS Styles -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/modern-normalize.css" />
 
     <!-- Link Font Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,147 +17,188 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <header class="container">
-      <nav class="nav-bar">
-        <a class="logo" href="index.html"
-          >WEB<span class="logo-span">STUDIO</span></a
-        >
-        <ul class="nav-menu">
-          <li><a class="nav-menu-links" href="index.html">Studio</a></li>
-          <li><a class="nav-menu-links" href="portfolio.html">Portfolio</a></li>
-          <li><a class="nav-menu-links" href="#contacts">Contacts</a></li>
-        </ul>
-      </nav>
+    <header class="header-page container">
+      <div class="header-container">
+        <nav class="nav-bar">
+          <a class="logo link" href="index.html"
+            >WEB<span class="logo-span">STUDIO</span></a
+          >
+          <ul class="nav-menu">
+            <li class="list">
+              <a class="nav-menu-links link" href="index.html">Studio</a>
+            </li>
+            <li class="list">
+              <a class="nav-menu-links link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="list">
+              <a class="nav-menu-links link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-      <!-- Outside Nav -->
-      <address class="address-container">
-        <a class="address-links" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        ><br />
-        <a class="address-links" href="tel:+11(000)111-11-11"
-          >+11 (000) 111-11-11</a
-        >
-      </address>
+        <!-- Outside Nav -->
+        <ul class="contact-list">
+          <li class="contact-item list">
+            <a class="address-links link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-item list">
+            <a class="address-links link" href="tel:+11(000)111-11-11"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
-      <section class="portfolio-section">
-        <h2 hidden>Buttons</h2>
-        <!-- Buttons -->
-        <ul class="filter-buttons">
-          <li><button type="button" class="btn-filter">All</button></li>
-          <li><button type="button" class="btn-filter">Web Site</button></li>
-          <li><button type="button" class="btn-filter">App</button></li>
-          <li><button type="button" class="btn-filter">Design</button></li>
-          <li><button type="button" class="btn-filter">Marketing</button></li>
-        </ul>
+      <section class="portfolio-section section no-top-padding">
+        <div class="container">
+          <h2 hidden>Buttons</h2>
+          <!-- Buttons -->
+          <ul class="filter-buttons">
+            <li class="filter-button-items list">
+              <button type="button" class="btn-filter">All</button>
+            </li>
+            <li class="filter-button-items list">
+              <button type="button" class="btn-filter">Web Site</button>
+            </li>
+            <li class="filter-button-items list">
+              <button type="button" class="btn-filter">App</button>
+            </li>
+            <li class="filter-button-items list">
+              <button type="button" class="btn-filter">Design</button>
+            </li>
+            <li class="filter-button-items list">
+              <button type="button" class="btn-filter">Marketing</button>
+            </li>
+          </ul>
 
-        <!-- First Row -->
-        <ul class="portfolio-section-container">
-          <li>
-            <img
-              src="images/banking-app.jpg"
-              alt="Banking App"
-              height="360"
-              width="360"
-            />
-            <h3>Banking App Interface Concept</h3>
-            <p>App</p>
-          </li>
-          <li>
-            <img
-              src="images/cashless-payment.jpg"
-              alt="Cashless Payment"
-              height="360"
-              width="360"
-            />
-            <h3>Cashless Payment</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img
-              src="images/meditation-app.jpg"
-              alt="Meditation App"
-              height="360"
-              width="360"
-            />
-            <h3>Meditation App</h3>
-            <p>App</p>
-          </li>
+          <!-- First Row -->
+          <ul class="portfolio-items-list">
+            <li class="portfolio-items list">
+              <img
+                src="images/banking-app.jpg"
+                alt="Banking App"
+                height="360"
+                width="360"
+              />
+              <div class="substrate">
+                <h3 class="portfolio-title">Banking App Interface Concept</h3>
+                <p class="portfolio-description">App</p>
+              </div>
+            </li>
+            <li class="portfolio-items list">
+              <img
+                src="images/cashless-payment.jpg"
+                alt="Cashless Payment"
+                height="360"
+                width="360"
+              />
+              <div class="substrate">
+                <h3 class="portfolio-title">Cashless Payment</h3>
+                <p class="portfolio-description">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-items list">
+              <img
+                src="images/meditation-app.jpg"
+                alt="Meditation App"
+                height="360"
+                width="360"
+              />
+              <div class="substrate">
+                <h3 class="portfolio-title">Meditation App</h3>
+                <p class="portfolio-description">App</p>
+              </div>
+            </li>
 
-          <!-- Second Row -->
-          <li>
-            <img
-              src="images/taxi-service.jpg"
-              alt="Taxi Service"
-              height="360"
-              width="360"
-            />
-            <h3>Taxi Service</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img
-              src="images/screen-illustrations.jpg"
-              alt="Screen Illustrations"
-              height="360"
-              width="360"
-            />
-            <h3>Screen Illustrations</h3>
-            <p>Design</p>
-          </li>
-          <li>
-            <img
-              src="images/online-courses.jpg"
-              alt="Online Courses"
-              height="360"
-              width="360"
-            />
-            <h3>Online Courses</h3>
-            <p>Marketing</p>
-          </li>
+            <!-- Second Row -->
+            <li class="portfolio-items list">
+              <img
+                src="images/taxi-service.jpg"
+                alt="Taxi Service"
+                height="360"
+                width="360"
+              />
+              <div class="substrate">
+                <h3 class="portfolio-title">Taxi Service</h3>
+                <p class="portfolio-description">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-items list">
+              <img
+                src="images/screen-illustrations.jpg"
+                alt="Screen Illustrations"
+                height="360"
+                width="360"
+              />
+              <div class="substrate">
+                <h3 class="portfolio-title">Screen Illustrations</h3>
+                <p class="portfolio-description">Design</p>
+              </div>
+            </li>
+            <li class="portfolio-items list">
+              <img
+                src="images/online-courses.jpg"
+                alt="Online Courses"
+                height="360"
+                width="360"
+              />
+              <div class="substrate">
+                <h3 class="portfolio-title">Online Courses</h3>
+                <p class="portfolio-description">Marketing</p>
+              </div>
+            </li>
 
-          <!-- Third Row -->
-          <li>
-            <img
-              src="images/instagram-stories.jpg"
-              alt="Instagram Stories"
-              height="360"
-              width="360"
-            />
-            <h3>Instagram Stories Concept</h3>
-            <p>Design</p>
-          </li>
-          <li>
-            <img
-              src="images/organic-food.jpg"
-              alt="Organic Food"
-              height="360"
-              width="360"
-            />
-            <h3>Organic Food</h3>
-            <p>Web Site</p>
-          </li>
-          <li>
-            <img
-              src="images/fresh-coffee.jpg"
-              alt="Fresh Coffee"
-              height="360"
-              width="360"
-            />
-            <h3>Fresh Coffee</h3>
-            <p>Web Site</p>
-          </li>
-        </ul>
+            <!-- Third Row -->
+            <li class="portfolio-items list">
+              <img
+                src="images/instagram-stories.jpg"
+                alt="Instagram Stories"
+                height="360"
+                width="360"
+              />
+              <div class="substrate">
+                <h3 class="portfolio-title">Instagram Stories Concept</h3>
+                <p class="portfolio-description">Design</p>
+              </div>
+            </li>
+            <li class="portfolio-items list">
+              <img
+                src="images/organic-food.jpg"
+                alt="Organic Food"
+                height="360"
+                width="360"
+              />
+              <div class="substrate">
+                <h3 class="portfolio-title">Organic Food</h3>
+                <p class="portfolio-description">Web Site</p>
+              </div>
+            </li>
+            <li class="portfolio-items list">
+              <img
+                src="images/fresh-coffee.jpg"
+                alt="Fresh Coffee"
+                height="360"
+                width="360"
+              />
+              <div class="substrate">
+                <h3 class="portfolio-title">Fresh Coffee</h3>
+                <p class="portfolio-description">Web Site</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- Page footer -->
-    <footer>
-      <div class="footer-container">
-        <a class="logo" href="index.html"
+    <footer class="footer-page">
+      <div class="container">
+        <a class="logo footer-link link" href="index.html"
           >WEB<span class="logo-span">STUDIO</span></a
         >
         <p>
