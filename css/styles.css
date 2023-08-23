@@ -68,7 +68,7 @@ button {
   color: var(--navyblue);
 }
 
-.header-page {
+.header-page{
   border-bottom: 1px solid var(--cornflower);
   background: var(--white);
 }
@@ -167,7 +167,7 @@ button {
 }
 
 .features-title {
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -177,7 +177,7 @@ button {
 }
 
 .feature-description {
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
